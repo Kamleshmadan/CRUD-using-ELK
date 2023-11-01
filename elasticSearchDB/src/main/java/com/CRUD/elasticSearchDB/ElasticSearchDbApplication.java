@@ -24,8 +24,15 @@ public class ElasticSearchDbApplication {
 	private EmployeeRepository repository;
 
 	/*
-	 * http://localhost:8090/saveEmployee [ { "id":, "firstname":"", "lastname":"",
-	 * "age": } ]
+	 * http://localhost:8090/saveEmployee 
+	[ 
+	    { 
+	    "id":,
+	    "firstname":"",
+	    "lastname":"",
+		"age":
+	    }
+	]
 	 */
 	@PostMapping("/saveEmployee")
 	public List<Employee> saveEmployee(@RequestBody List<Employee> employees) {
